@@ -2,7 +2,7 @@
  * @deprecated Since Discord v12 editing and sending of embeds has become available and this module is no longer required.
  */
 module.exports = (msg) => {
-  console.warn("[embed-creator] Since Discord v12 editing and sending of embeds has become available and this module is no longer required.");
+  return console.error("The Embed-Creator module has been completely disabled due to Discord v12 editing being the same.");
   let ME = msg.embeds[0];
   if (!msg.embeds[0]) return "No Embed";
   let RE = {
